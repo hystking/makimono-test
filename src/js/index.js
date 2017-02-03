@@ -1,4 +1,4 @@
-import Makimono from "./makimono"
+import Makimono from "makimono"
 
 export default function index() {
   const makimono = new Makimono({

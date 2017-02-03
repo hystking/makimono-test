@@ -33,5 +33,8 @@
     "presets": [
       "es2015"
     ]
+  },
+  "dependencies": {
+    "makimono": "^0.0.4"
   }
 }
