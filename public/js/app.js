@@ -1,0 +1,1 @@
+console.error("SyntaxError: /Users/nakayama-yuhei/Repos/makimono-test/src/js/makimono.js: Unexpected token, expected ; (1:9) while parsing file: /Users/nakayama-yuhei/Repos/makimono-test/src/js/makimono.js");
