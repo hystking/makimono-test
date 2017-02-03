@@ -1,4 +1,4 @@
-Function Makimono(opts) {
+function Makimono(opts) {
   opts = opts == null ? {} : opts
 
   /* parameters */

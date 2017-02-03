@@ -8,7 +8,18 @@ export default function index() {
     bottom: text.offsetHeight - frame.offsetHeight,
   })
 
+  makimono.bindEvents(window)
+  function update(time) {
+    makimono.update(time)
+    const {x, y} = makimono.getPosition()
+
+    text.style.transform = `translate(${x}px, ${y}px)`
+    requestAnimationFrame(update)
+  }
+  requestAnimationFrame(update)
+
   $(window).on("mousewheel", e => {
-    makimono.addDeltaConstrantly(e.deltaX * e.deltaFactor, e.deltaY * e.deltaFactor)
+    makimono.addDeltaConstantly(e.deltaX * e.deltaFactor, e.deltaY * e.deltaFactor)
+    e.preventDefault()
   })
 }
