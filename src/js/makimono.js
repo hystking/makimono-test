@@ -191,6 +191,7 @@ Makimono.prototype = {
 
   _onTouchMove: function(e) {
     this._onMouseMove(e.touches[0])
+    e.preventDefault()
   }
 }
 
